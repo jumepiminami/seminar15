@@ -541,6 +541,8 @@ body {
   .content-right-background {
     width: 360px;
     height: 490x;
+    top: 20px;
+    background-position: center;
   }
   .btn {
     margin: 76px auto 0;
