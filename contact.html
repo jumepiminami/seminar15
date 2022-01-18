@@ -13,19 +13,20 @@
 <body>
 
     <main class="form">
+        <h2 class="form-title">CONTACT</h2>
         <form action="./done.html"" method="post">
 
         
             <div class="form-top">
                 <div class="form-name">
                     <label for="">お名前</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
 
 
                 <div class="form-number">
                     <label for="">学籍番号</label>
-                    <input type="number">
+                    <input type="number" pattern="[0-9]{,10}" required>
                 </div>
             </div>
 
@@ -33,7 +34,7 @@
 
             <div class="form-mail">
                 <label for="">メールアドレス</label>
-                <input type="email">
+                <input type="email" required>
             </div>
 
 
@@ -54,7 +55,7 @@
 
             <div class="form-text">
                 <label for="" class="form-text-title">お問合せ内容</label>
-                <textarea name="" id="" cols=""" rows="0" class="form-text-content"></textarea>
+                <textarea name="" id="" cols=""" rows="0" class="form-text-content" required></textarea>
             </div>
 
             <div class="form-submit">
