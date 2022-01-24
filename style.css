@@ -4,6 +4,16 @@ body {
   margin: 0 auto;
 }
 
+body input[type="number"]::-webkit-outer-spin-button,
+body input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -300,6 +310,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+  margin-right: 20px;
 }
 
 .form-selectbottom {
@@ -314,8 +325,8 @@ body {
 }
 
 .form-selectbottom input[type=radio] {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background: #F9F9F9;
   border: 1px solid #373745;
   -webkit-box-sizing: border-box;
@@ -325,6 +336,7 @@ body {
 .form-selectbottom label {
   font-size: 16px;
   font-weight: 400;
+  margin-right: 20px;
 }
 
 .form-text {
@@ -376,6 +388,11 @@ body {
 
 .form fieldset {
   border: none;
+}
+
+#alert {
+  color: #EC3636;
+  margin-top: 10px;
 }
 
 .done {

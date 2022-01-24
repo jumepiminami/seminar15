@@ -26,7 +26,9 @@
 
                 <div class="form-number">
                     <label for="">学籍番号</label>
-                    <input type="number" pattern="[0-9]{,10}" required>
+                    <input type="number" maxlength="10" id="studentNumber" onchange="inputCheck()"  required>
+                    <div id="alert"></div>
+                    <!-- pattern="[0-9]{,10}" oninput="sliceMinLength(10, this)" -->
                 </div>
             </div>
 
@@ -40,14 +42,14 @@
 
             <fieldset class="form-selecttop">
                 <legend>所属</legend>
-                <label for=""><input type="radio" name="state" id="" class="form-selecttop-regular">学生</label>
+                <label for=""><input type="radio" name="state" id="" class="form-selecttop-regular" required>学生</label>
                 <label for=""><input type="radio" name="state" id="" class="form-selecttop-regular">社会人</label>
             </fieldset>
 
 
             <fieldset class="form-selectbottom">
                 <legend>お使いのデバイス</legend>
-                <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular">スマートフォン</label>
+                <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular" required>スマートフォン</label>
                 <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular">タブレット</label>
                 <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular">パソコン</label>
             </fieldset>
@@ -67,5 +69,6 @@
     
     </main>
     
+<script src="./script.js"></script>
 </body>
 </html>
