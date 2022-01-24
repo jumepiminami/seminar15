@@ -14,19 +14,19 @@
 
     <main class="form">
         <h2 class="form-title">CONTACT</h2>
-        <form action="./done.html"" method="post">
+        <form action="./done.html"" method="post" onsubmit="return beforeSubmit()">
 
         
             <div class="form-top">
                 <div class="form-name">
                     <label for="">お名前</label>
-                    <input type="text" required>
+                    <input type="text" class="def" required>
                 </div>
 
 
                 <div class="form-number">
                     <label for="">学籍番号</label>
-                    <input type="number" maxlength="10" id="studentNumber" onchange="inputCheck()"  required>
+                    <input type="number" class="def" maxlength="10" id="studentNumber" onchange="inputCheck()"  required>
                     <div id="alert"></div>
                     <!-- pattern="[0-9]{,10}" oninput="sliceMinLength(10, this)" -->
                 </div>
@@ -36,28 +36,28 @@
 
             <div class="form-mail">
                 <label for="">メールアドレス</label>
-                <input type="email" required>
+                <input type="email" class="def" required>
             </div>
 
 
             <fieldset class="form-selecttop">
                 <legend>所属</legend>
-                <label for=""><input type="radio" name="state" id="" class="form-selecttop-regular" required>学生</label>
-                <label for=""><input type="radio" name="state" id="" class="form-selecttop-regular">社会人</label>
+                <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular" required>学生</label>
+                <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular">社会人</label>
             </fieldset>
 
 
             <fieldset class="form-selectbottom">
                 <legend>お使いのデバイス</legend>
-                <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular" required>スマートフォン</label>
-                <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular">タブレット</label>
-                <label for=""><input type="radio" name="device" id="" class="form-selectbottom-regular">パソコン</label>
+                <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular" required>スマートフォン</label>
+                <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular">タブレット</label>
+                <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular">パソコン</label>
             </fieldset>
             
 
             <div class="form-text">
                 <label for="" class="form-text-title">お問合せ内容</label>
-                <textarea name="" id="" cols=""" rows="0" class="form-text-content" required></textarea>
+                <textarea name=""  id="" cols=""" rows="0" class="def form-text-content" required></textarea>
             </div>
 
             <div class="form-submit">
