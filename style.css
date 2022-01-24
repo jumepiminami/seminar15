@@ -597,17 +597,17 @@ body {
             flex-direction: column;
   }
   .form input {
-    font-size: 12px;
+    font-size: 18px;
     padding: 0 4px;
   }
   .form label {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   .form legend {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   .form textarea {
-    font-size: 10px;
+    font-size: 14px;
     padding: 4px 8px;
   }
   .form-regular {
