@@ -14,7 +14,8 @@
 
     <main class="form">
         <h2 class="form-title">CONTACT</h2>
-        <form action="./done.html"" method="post" onsubmit="return beforeSubmit()">
+        <form action="./done.html" method="post" onsubmit="return beforeSubmit()" >
+            <!-- <input type="hidden" NAME="_accept_html" VALUE="accept.html"> -->
 
         
             <div class="form-top">
@@ -61,11 +62,18 @@
             </div>
 
             <div class="form-submit">
-                <input class="form-submit-btn" type="submit">
+                <input class="form-submit-btn" type="submit"> 
             </div>
             
 
         </form>
+
+        <div class="form-back done-back">
+            <a href="./index.html" class="form-back-link done-back-link">
+                <img src="./back.png" alt="back" class="form-back-link-img done-back-link-img">
+                <p class="form-back-link-text done-back-link-text">TOPへ戻る</p>
+            </a>
+        </div>
     
     </main>
     
