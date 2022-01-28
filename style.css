@@ -818,7 +818,7 @@ body input[type="number"] {
   }
   .form-selecttop label {
     height: 24px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
   }
   .form-selectbottom {
@@ -840,7 +840,7 @@ body input[type="number"] {
             box-sizing: border-box;
   }
   .form-selectbottom label {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
   }
   .form-text {
