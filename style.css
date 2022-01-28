@@ -639,7 +639,7 @@ body input[type="number"] {
     color: #373745;
   }
   .content-left-paragraphtop {
-    width: 94%;
+    width: 100%;
     height: auto;
     margin: 21px 0 0 0;
     font-family: Neuton;
@@ -651,7 +651,7 @@ body input[type="number"] {
     color: #373745;
   }
   .content-left-paragraphbottom {
-    width: 94%;
+    width: 100%;
     height: auto;
     margin: 36px 0;
     font-family: Neuton;
@@ -670,7 +670,7 @@ body input[type="number"] {
     position: absolute;
     right: 1px;
     background-image: url(crayon-1473.png);
-    opacity: 0.4;
+    opacity: 0.2;
     background-repeat: no-repeat;
     background-size: contain;
   }
