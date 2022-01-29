@@ -428,6 +428,8 @@ body input[type="number"] {
   font-size: 20px;
   text-align: center;
   /* identical to box height, or 173% */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
   color: #373745;
   text-decoration: none;
   border: 1px solid #373745;
@@ -454,6 +456,8 @@ body input[type="number"] {
   font-size: 20px;
   text-align: center;
   /* identical to box height, or 173% */
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
   color: #373745;
   text-decoration: none;
   border: 1px solid #373745;
