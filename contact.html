@@ -36,15 +36,15 @@
 
                 <div class="form-mail">
                     <label for="">メールアドレス</label>
-                    <input type="email" name="email" class="def" id="" required>
+                    <input type="email" name="email" class="def" id="email" onchange="inputCh()" required>
                     <div id="alert3"></div>
                 </div>
 
 
                 <fieldset class="form-selecttop">
                     <legend>所属</legend>
-                    <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular"   required>学生</label>
-                    <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular">社会人</label>
+                    <label for=""><input type="radio" class="def" name="state" id="state" class="form-selecttop-regular"   required>学生</label>
+                    <label for=""><input type="radio" class="def" name="state" id="state" class="form-selecttop-regular">社会人</label>
                     <div id="alert4"></div>
                 </fieldset>
 
@@ -66,14 +66,14 @@
 
                 <div class="form-submit">
                     <!-- <input class="form-submit-btn" type="submit" onclick="return beforeSubmit()"> -->
-                    <a href=""><button type="submit" class="form-submit-btn" onClick="return check()" ">確認</button></a>
+                    <a href=""><button type="submit" class="form-submit-btn" onClick="return check()" onclick="stateCheck()">confilm</button></a>
                     <!-- onclick="return beforeSubmit() -->
                 </div>
             
         </form>
 
         <div class="form-click">
-            <a href="./done.html" class="form-clck-a"><button class="form-clck-a-button">送信</button></a>
+            <a href="./done.html" class="form-clck-a"><button class="form-clck-a-button">submit</button></a>
         </div>
         
 

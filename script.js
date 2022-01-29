@@ -41,6 +41,22 @@ function inputCheck () {
   document.getElementById('output').innerHTML = form_value;
 }
 
+//test
+
+function stateCheck() {
+	var elem = document.getElementById('state');
+
+	if (elem.checked){
+		document.getElementById('alert4').innerHTML = 'OKです';  
+	} else {
+		document.getElementById('alert4').innerHTML = '必須です'; 
+	}
+}
+
+
+
+
+
 
 function check(){
 
@@ -49,12 +65,12 @@ function check(){
 
 	// 設定開始（必須にする項目を設定してください）
 
-	if(document.form1.name.value == ""){ // 「お名前」の入力をチェック
+	if (document.form1.name.value == "") { // 「お名前」の入力をチェック
 
 		flag = 1;
 
 	}
-	else if(document.form1.studentnumber.value == ""){ // 「学籍番号」の入力をチェック
+	else if (document.form1.studentnumber.value == "") { // 「学籍番号」の入力をチェック
 
 		flag = 1;
 
@@ -62,6 +78,9 @@ function check(){
 	else if (document.form1.email.value == "") {  // 「メアド」の入力をチェック
 
 		flag = 1;
+	
+
+
 	}
 	else if(document.form1.state.value == ""){ // 「state」の入力をチェック
 

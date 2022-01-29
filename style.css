@@ -372,8 +372,8 @@ body input[type="number"] {
 }
 
 .form-selectbottom input[type=radio] {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background: #F9F9F9;
   border: 1px solid #373745;
   -webkit-box-sizing: border-box;
@@ -417,18 +417,16 @@ body input[type="number"] {
 }
 
 .form-submit {
-  width: 100%;
-  margin-top: 82px;
+  margin: 82px auto 0;
   text-align: center;
+  width: 335px;
 }
 
 .form-submit-btn {
   background-color: #fff;
-  padding: 8px 28px 4px;
   font-size: 20px;
   text-align: center;
-  /* identical to box height, or 173% */
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Neuton',serif;
   font-weight: bold;
   color: #373745;
   text-decoration: none;
@@ -436,6 +434,7 @@ body input[type="number"] {
   border-radius: 50%;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
+  padding: 26px 80px 30px;
 }
 
 .form-submit-btn:hover {
@@ -443,20 +442,19 @@ body input[type="number"] {
 }
 
 .form-click {
-  width: 100%;
-  height: 60px;
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 40px;
+  margin: 82px auto 0;
+  text-align: center;
+  width: 335px;
+  height: 110px;
 }
 
 .form-click button {
   background-color: #fff;
-  padding: 8px 28px 4px;
   font-size: 20px;
   text-align: center;
-  /* identical to box height, or 173% */
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Neuton', serif;
   font-weight: bold;
   color: #373745;
   text-decoration: none;
@@ -464,6 +462,7 @@ body input[type="number"] {
   border-radius: 50%;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
+  padding: 26px 80px 30px;
 }
 
 .form-click button:hover {
