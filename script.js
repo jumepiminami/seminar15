@@ -44,7 +44,7 @@ function inputCheck () {
 //送信確認
 function beforeSubmit() {
     if(window.confirm('この内容で送信しますがよろしいでしょうか?')) {
-    return true;
+        return true;
     } else {
       return false;
     }
