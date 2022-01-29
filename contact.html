@@ -14,20 +14,21 @@
 
     <main class="form blurTrigger">
         <h2 class="form-title">CONTACT FORM</h2>
-        <form action="" method="post" onsubmit="return beforeSubmit()" >
+        <form action="" method="post" name="form1" >
 
         
             <div class="form-top">
                 <div class="form-name">
                     <label for="">お名前</label>
-                    <input type="text" class="def" required>
+                    <input type="text" name="name" class="def" id="" required>
+                    <div id="alert1"></div>
                 </div>
 
 
                 <div class="form-number">
                     <label for="">学籍番号</label>
-                    <input type="tel" class="def" maxlength="10" id="studentNumber" onchange="inputCheck()"  required>
-                    <div id="alert"></div>
+                    <input type="tel" class="def" maxlength="10" name="studentnumber" id="studentNumber" onchange="inputCheck()"  required>
+                    <div id="alert2"></div>
                 </div>
 
             </div>
@@ -35,14 +36,16 @@
 
                 <div class="form-mail">
                     <label for="">メールアドレス</label>
-                    <input type="email" class="def" required>
+                    <input type="email" name="email" class="def" id="" required>
+                    <div id="alert3"></div>
                 </div>
 
 
                 <fieldset class="form-selecttop">
                     <legend>所属</legend>
-                    <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular" required>学生</label>
+                    <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular"   required>学生</label>
                     <label for=""><input type="radio" class="def" name="state" id="" class="form-selecttop-regular">社会人</label>
+                    <div id="alert4"></div>
                 </fieldset>
 
 
@@ -51,20 +54,29 @@
                     <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular" required>スマートフォン</label>
                     <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular">タブレット</label>
                     <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular">パソコン</label>
+                    <div id="alert5"></div>
                 </fieldset>
             
 
                 <div class="form-text">
                     <label for="" class="form-text-title">お問合せ内容</label>
-                    <textarea name=""  id="" cols=""" rows="0" class="def form-text-content" required></textarea>
+                    <textarea name="otoiawase"  id="" cols=""" rows="0" class="def form-text-content" required></textarea>
+                    <div id="alert6"></div>
                 </div>
 
                 <div class="form-submit">
-                    <input class="form-submit-btn" type="submit">
+                    <!-- <input class="form-submit-btn" type="submit" onclick="return beforeSubmit()"> -->
+                    <a href=""><button type="submit" class="form-submit-btn" onClick="return check()" ">確認</button></a>
+                    <!-- onclick="return beforeSubmit() -->
                 </div>
-                
-
+            
         </form>
+
+        <div class="form-click">
+            <a href="./done.html" class="form-clck-a"><button class="form-clck-a-button">送信</button></a>
+        </div>
+        
+
 
         <div class="form-back">
             <a href="./index.html" class="form-back-link">

@@ -418,19 +418,52 @@ body input[type="number"] {
 
 .form-submit {
   width: 100%;
-  margin-top: 52px;
+  margin-top: 82px;
   text-align: center;
 }
 
 .form-submit-btn {
-  width: 104px;
-  height: 39px;
-  margin: 0 auto;
-  background: #F9F9F9;
+  background-color: #fff;
+  padding: 8px 28px 4px;
+  font-size: 20px;
+  text-align: center;
+  /* identical to box height, or 173% */
+  color: #373745;
+  text-decoration: none;
   border: 1px solid #373745;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 50%;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.form-submit-btn:hover {
+  background-color: #fa8a6b;
+}
+
+.form-click {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form-click button {
+  background-color: #fff;
+  padding: 8px 28px 4px;
+  font-size: 20px;
+  text-align: center;
+  /* identical to box height, or 173% */
+  color: #373745;
+  text-decoration: none;
+  border: 1px solid #373745;
+  border-radius: 50%;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.form-click button:hover {
+  background-color: #fa8a6b;
 }
 
 .form-back {
@@ -481,7 +514,12 @@ body input[type="number"] {
   border: none;
 }
 
-#alert {
+#alert1,
+#alert2,
+#alert3,
+#alert4,
+#alert5,
+#alert6 {
   color: #EC3636;
   margin-top: 10px;
 }
@@ -694,6 +732,9 @@ body input[type="number"] {
     -webkit-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
   }
+  .btn-inside:active {
+    background-color: #fa8a6b;
+  }
   .form {
     width: 80%;
     margin: 60px auto 0;
@@ -875,16 +916,11 @@ body input[type="number"] {
     margin-top: 52px;
     text-align: center;
   }
-  .form-submit-btn {
-    width: 104px;
-    height: 39px;
-    margin: 0 auto;
-    background: #F9F9F9;
-    border: 1px solid #373745;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 10px;
-    color: #373745;
+  .form-submit-btn:active {
+    background-color: #fa8a6b;
+  }
+  .form-click button:active {
+    background-color: #fa8a6b;
   }
 }
 /*# sourceMappingURL=style.css.map */
