@@ -182,6 +182,30 @@ function deviceCheck3() {
 }
 
 
+
+//お問い合わせ
+function otoiawaseCheck() {
+	// var form1.email = document.getElementsByName('email');
+
+	if (form1.otoiawase.value == "") {
+		document.getElementById('alert6').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert6').innerHTML = 'OKです'; 
+	  }
+}
+
+//お問い合わせ1
+function otoiawaseCheck1() {
+	// var form1.email = document.getElementsByName('email');
+
+	if (form1.otoiawase.value == "") {
+		document.getElementById('alert6').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert6').innerHTML = 'OKです'; 
+	  }
+}
+
+
 function check(){
 
 	var flag = 0;
@@ -230,6 +254,7 @@ function check(){
 			emailCheck1();
 			stateCheck();
 			deviceCheck();	
+			otoiawaseCheck1();
 		  // 送信を中止
 
 	}
