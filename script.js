@@ -24,7 +24,16 @@ $(window).on('load', function () {
 });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 
+//名前
+function nameCheck() {
+	var elem = document.getElementsByName('name');
 
+	if (elem.checked){
+		document.getElementById('alert1').innerHTML = 'OKです';  
+	} else {
+		document.getElementById('alert1').innerHTML = '必須です'; 
+	}
+}
 
 //入力桁数制限
 function inputCheck () {
@@ -41,10 +50,31 @@ function inputCheck () {
   document.getElementById('output').innerHTML = form_value;
 }
 
-//test
+//メール
+function emailCheck() {
+	// var form1.email = document.getElementsByName('email');
 
+	if (form1.email.value == "") {
+		document.getElementById('alert3').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert3').innerHTML = 'OKです'; 
+	  }
+}
+
+//メール1
+function emailCheck1() {
+	// var form1.email = document.getElementsByName('email');
+
+	if (form1.email.value == "") {
+		document.getElementById('alert3').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert3').innerHTML = 'OKです'; 
+	  }
+}
+
+//所属
 function stateCheck() {
-	var elem = document.getElementById('state');
+	var elem = document.getElementsByName('state');
 
 	if (elem.checked){
 		document.getElementById('alert4').innerHTML = 'OKです';  
@@ -52,10 +82,71 @@ function stateCheck() {
 		document.getElementById('alert4').innerHTML = '必須です'; 
 	}
 }
+//所属1
+function stateCheck1() {
+	var elem1 = document.getElementById('state1');
 
+	if (elem1.checked) {
+		document.getElementById('alert4').innerHTML = 'OKです';
+	} else {
+		document.getElementById('alert4').innerHTML = '';
+	}
+}
 
+//所属2
+function stateCheck2() {
+	var elem2 = document.getElementById('state2');
 
+	if (elem2.checked) {
+		document.getElementById('alert4').innerHTML = 'OKです';
+	} else {
+		document.getElementById('alert4').innerHTML = '';
+	}
+}
 
+//デバイス
+function deviceCheck() {
+	var elem = document.getElementsByName('device');
+
+	if (elem.checked){
+		document.getElementById('alert5').innerHTML = 'OKです';  
+	} else {
+		document.getElementById('alert5').innerHTML = '必須です'; 
+	}
+}
+
+//デバイス1
+function deviceCheck1() {
+	var elem1 = document.getElementById('device1');
+
+	if (elem1.checked){
+		document.getElementById('alert5').innerHTML = 'OKです';  
+	} else {
+		document.getElementById('alert5').innerHTML = ''; 
+	}
+}
+
+//デバイス2
+function deviceCheck2() {
+	var elem2 = document.getElementById('device2');
+
+	if (elem2.checked){
+		document.getElementById('alert5').innerHTML = 'OKです';  
+	} else {
+		document.getElementById('alert5').innerHTML = ''; 
+	}
+}
+
+//デバイス3
+function deviceCheck3() {
+	var elem3 = document.getElementById('device3');
+
+	if (elem3.checked){
+		document.getElementById('alert5').innerHTML = 'OKです';  
+	} else {
+		document.getElementById('alert5').innerHTML = ''; 
+	}
+}
 
 
 function check(){
@@ -85,7 +176,7 @@ function check(){
 	else if(document.form1.state.value == ""){ // 「state」の入力をチェック
 
 		flag = 1;
-
+		
 
 	}
 	else if (document.form1.device.value == "") {  // 「device」の入力をチェック
@@ -101,7 +192,10 @@ function check(){
 	if(flag){
 
 		window.alert('必須項目に未入力がありました'); // 入力漏れがあれば警告ダイアログを表示
-		return false; // 送信を中止
+		emailCheck1();
+			stateCheck();
+			deviceCheck();	
+		  // 送信を中止
 
 	}
 	else{
@@ -115,10 +209,6 @@ function fa(){
 	document.getElementById('alert1').innerHTML = '必須です';
 	form.value = '';
 	document.getElementById('alert3').innerHTML = '必須です';
-	form.value = '';
-	document.getElementById('alert4').innerHTML = '必須です';
-	form.value = '';
-	document.getElementById('alert5').innerHTML = '必須です';
 	form.value = '';
 	document.getElementById('alert6').innerHTML = '必須です';
 	form.value = '';

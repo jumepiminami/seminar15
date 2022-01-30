@@ -20,7 +20,7 @@
             <div class="form-top">
                 <div class="form-name">
                     <label for="">お名前</label>
-                    <input type="text" name="name" class="def" id="" required>
+                    <input type="text" name="name" class="def" id="name" onchange="nameCheck()" required>
                     <div id="alert1"></div>
                 </div>
 
@@ -36,24 +36,24 @@
 
                 <div class="form-mail">
                     <label for="">メールアドレス</label>
-                    <input type="email" name="email" class="def" id="email" onchange="inputCh()" required>
+                    <input type="email" name="email" class="def" id="email" onchange="emailCheck()" required>
                     <div id="alert3"></div>
                 </div>
 
 
                 <fieldset class="form-selecttop">
                     <legend>所属</legend>
-                    <label for=""><input type="radio" class="def" name="state" id="state" class="form-selecttop-regular"   required>学生</label>
-                    <label for=""><input type="radio" class="def" name="state" id="state" class="form-selecttop-regular">社会人</label>
+                    <label for=""><input type="radio" class="def" name="state" id="state1" class="form-selecttop-regular" onclick="stateCheck1()"   required>学生</label>
+                    <label for=""><input type="radio" class="def" name="state" id="state2" class="form-selecttop-regular" onclick="stateCheck2()">社会人</label>
                     <div id="alert4"></div>
                 </fieldset>
 
 
                 <fieldset class="form-selectbottom">
                     <legend>お使いのデバイス</legend>
-                    <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular" required>スマートフォン</label>
-                    <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular">タブレット</label>
-                    <label for=""><input type="radio" class="def" name="device" id="" class="form-selectbottom-regular">パソコン</label>
+                    <label for=""><input type="radio" class="def" name="device" id="device1" class="form-selectbottom-regular" onclick="deviceCheck1()" required>スマートフォン</label>
+                    <label for=""><input type="radio" class="def" name="device" id="device2" class="form-selectbottom-regular" onclick="deviceCheck2()">タブレット</label>
+                    <label for=""><input type="radio" class="def" name="device" id="device3" class="form-selectbottom-regular" onclick="deviceCheck3()">パソコン</label>
                     <div id="alert5"></div>
                 </fieldset>
             
