@@ -26,13 +26,46 @@ $(window).on('load', function () {
 
 //名前
 function nameCheck() {
-	var elem = document.getElementsByName('name');
+	// var elem = document.getElementsByName('name');
 
-	if (elem.checked){
-		document.getElementById('alert1').innerHTML = 'OKです';  
-	} else {
+	if (form1.name.value == "") {
 		document.getElementById('alert1').innerHTML = '必須です'; 
-	}
+	} else {
+		document.getElementById('alert1').innerHTML = 'OKです'; 
+	  }
+}
+
+//名前1
+function nameCheck1() {
+	// var elem = document.getElementsByName('name');
+
+	if (form1.name.value == "") {
+		document.getElementById('alert1').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert1').innerHTML = 'OKです'; 
+	  }
+}
+
+//学籍番号
+function numberCheck() {
+	// var elem = document.getElementsByName('name');
+
+	if (form1.studentNumber.value == "") {
+		document.getElementById('alert2').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert2').innerHTML = 'OKです'; 
+	  }
+}
+
+//学籍番号1
+function numberCheck1() {
+	// var elem = document.getElementsByName('name');
+
+	if (form1.studentnumber.value == "") {
+		document.getElementById('alert2').innerHTML = '必須です'; 
+	} else {
+		document.getElementById('alert2').innerHTML = 'OKです'; 
+	  }
 }
 
 //入力桁数制限
@@ -192,7 +225,9 @@ function check(){
 	if(flag){
 
 		window.alert('必須項目に未入力がありました'); // 入力漏れがあれば警告ダイアログを表示
-		emailCheck1();
+			nameCheck1();	
+			numberCheck1();
+			emailCheck1();
 			stateCheck();
 			deviceCheck();	
 		  // 送信を中止
@@ -205,16 +240,16 @@ function check(){
 
 }
 
-function fa(){
-	document.getElementById('alert1').innerHTML = '必須です';
-	form.value = '';
-	document.getElementById('alert3').innerHTML = '必須です';
-	form.value = '';
-	document.getElementById('alert6').innerHTML = '必須です';
-	form.value = '';
+// function fa(){
+// 	document.getElementById('alert1').innerHTML = '必須です';
+// 	form.value = '';
+// 	document.getElementById('alert3').innerHTML = '必須です';
+// 	form.value = '';
+// 	document.getElementById('alert6').innerHTML = '必須です';
+// 	form.value = '';
 	
 	
-}
+// }
 
 //送信確認
 function beforeSubmit() {
