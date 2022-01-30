@@ -121,7 +121,8 @@ function fa(){
 	document.getElementById('alert5').innerHTML = '必須です';
 	form.value = '';
 	document.getElementById('alert6').innerHTML = '必須です';
-    form.value = '';
+	form.value = '';
+	
 	
 }
 

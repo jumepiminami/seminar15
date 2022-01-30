@@ -421,13 +421,13 @@ body input[type="number"] {
   text-align: center;
 }
 
-.form-submit-btn {
-  background-color: #fff;
+.form-submit input {
+  background-color: #373745;
   font-size: 20px;
   text-align: center;
   font-family: 'Neuton',serif;
   font-weight: bold;
-  color: #373745;
+  color: #fff;
   text-decoration: none;
   border: 1px solid #373745;
   border-radius: 50%;
@@ -436,8 +436,9 @@ body input[type="number"] {
   padding: 26px 80px 30px;
 }
 
-.form-submit-btn:hover {
+.form-submit input:hover {
   background-color: #fa8a6b;
+  color: #373745;
 }
 
 .form-click {
@@ -449,11 +450,11 @@ body input[type="number"] {
 .form-click button {
   margin: 0 auto;
   text-align: center;
-  background-color: #fff;
+  background-color: #373745;
   font-size: 20px;
   font-family: 'Neuton', serif;
   font-weight: bold;
-  color: #373745;
+  color: #fff;
   text-decoration: none;
   border: 1px solid #373745;
   border-radius: 50%;
@@ -464,6 +465,7 @@ body input[type="number"] {
 
 .form-click button:hover {
   background-color: #fa8a6b;
+  color: #373745;
 }
 
 .form-back {
